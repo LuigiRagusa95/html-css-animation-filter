@@ -1,0 +1,62 @@
+.well > .ex-1-square,
+.well > .ex-2-square,
+.well > .ex-3-square,
+.well > .ex-4-square,
+.well > .ex-5-square,
+.well > .ex-6-img,
+.well > .ex-7-img,
+.well > .ex-8-img,
+.well > .ex-9-img {
+    transition: 500ms;
+}
+
+/* FILL SQUARE */
+.well > .ex-1-square:hover {
+    background-color: red;
+}
+
+/* GROW */
+.well > .ex-2-square:active {
+    width: 100%;
+}
+
+/* ROUNDED */
+.well > .ex-3-square:hover {
+    border-radius: 50%;
+}
+
+/* HIDE */
+.well > .ex-4-square:hover {
+    opacity: 0;
+}
+
+/* GROW & SHRINK */
+.well > .ex-5-square:hover {
+    transform: scale(2);
+}
+.well > .ex-5-square:active {
+    transform: scale(0.5);
+}
+
+/* BLACK AND WHITE */
+.well > .ex-6-img:hover {
+    filter: grayscale(1);
+}
+
+/* BLACK, WHITE AND SEPIA */
+.well > .ex-7-img:hover {
+    filter: grayscale(1) sepia(0.5);
+}
+
+/* BLACK, WHITE AND BORDER-RADIUS */
+.well > .ex-8-img:hover {
+    border-radius: 16px;
+    filter: grayscale(0.6);
+}
+
+/* ALL TOGETHER */
+.well > .ex-9-img:hover {
+    border-radius: 16px;
+    filter: grayscale(0.6);
+    transform: scale(1.5);
+}
