@@ -119,7 +119,6 @@
 /* square left:  10% */
 .ex-13-button:hover .ex-13-top-white {
     transition: 1s;
-    position: relative;
     animation: translate-and-rotate 1s linear infinite;
 }
 
@@ -128,7 +127,6 @@
 /* square right:  20% */
 .ex-13-button:hover .ex-13-bottom-white {
     transition: 1s;
-    position: relative;
     animation: translate-and-rotate-second 1s linear infinite;
 }
 
