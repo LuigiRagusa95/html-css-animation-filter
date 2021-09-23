@@ -60,3 +60,128 @@
     filter: grayscale(0.6);
     transform: scale(1.5);
 }
+
+/* ANIMATION: SPIN */
+.well > .ex-10-icon {
+    animation: spin 1s linear infinite;
+}
+@keyframes spin {
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+/* ANIMATION: ROTATE IF I WANT */
+.well > .ex-11-icon:hover {
+    animation: rotateifiwant 1s linear;
+}
+@keyframes rotateifiwant {
+    0%,
+    100% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(260deg);
+    }
+}
+
+/* ANIMATION: BORDER 1 */
+.ex-12-button:hover .ex-12-top-white {
+    transition: 1s;
+    animation: translate-right 1s linear;
+}
+.ex-12-button:hover .ex-12-bottom-white {
+    transition: 1s;
+    animation: translate-left 1s linear;
+}
+@keyframes translate-right {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+}
+@keyframes translate-left {
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(-100px);
+    }
+}
+
+/* ANIMATION BORDER 2 */
+/* square width 60px = left: -30px */
+/* square height 20px = top: -10px */
+/* square left:  10% */
+.ex-13-button:hover .ex-13-top-white {
+    transition: 1s;
+    position: relative;
+    animation: translate-and-rotate 1s linear infinite;
+}
+
+/* square width 60px = left: -30px */
+/* square height 20px = top: -10px */
+/* square right:  20% */
+.ex-13-button:hover .ex-13-bottom-white {
+    transition: 1s;
+    position: relative;
+    animation: translate-and-rotate-second 1s linear infinite;
+}
+
+@keyframes translate-and-rotate {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+    25% {
+        left: calc(100% - 30px);
+        top: -10px;
+    }
+    50% {
+        left: calc(100% - 30px);
+        top: 100%;
+    }
+    75% {
+        left: 0;
+        top: 100%;
+    }
+    95% {
+        left: -30px;
+        top: -10px;
+    }
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+@keyframes translate-and-rotate-second {
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+    25% {
+        right: calc(100% - 30px);
+        bottom: -10px;
+    }
+    50% {
+        right: calc(100% - 30px);
+        bottom: 100%;
+    }
+    75% {
+        right: 0;
+        bottom: 100%;
+    }
+    95% {
+        right: -30px;
+        bottom: -10px;
+    }
+    100% {
+        right: 20%;
+        bottom: -10px;
+    }
+}
