@@ -6,7 +6,11 @@
 .well > .ex-6-img,
 .well > .ex-7-img,
 .well > .ex-8-img,
-.well > .ex-9-img {
+.well > .ex-9-img,
+.ex-12-top-white,
+.ex-12-bottom-white,
+.ex-13-top-white,
+.ex-13-bottom-white {
     transition: 500ms;
 }
 
@@ -87,11 +91,9 @@
 
 /* ANIMATION: BORDER 1 */
 .ex-12-button:hover .ex-12-top-white {
-    transition: 1s;
     animation: translate-right 1s linear;
 }
 .ex-12-button:hover .ex-12-bottom-white {
-    transition: 1s;
     animation: translate-left 1s linear;
 }
 @keyframes translate-right {
@@ -118,16 +120,14 @@
 /* square height 20px = top: -10px */
 /* square left:  10% */
 .ex-13-button:hover .ex-13-top-white {
-    transition: 1s;
-    animation: translate-and-rotate 1s linear infinite;
+    animation: translate-and-rotate 1s ease;
 }
 
 /* square width 60px = left: -30px */
 /* square height 20px = top: -10px */
 /* square right:  20% */
 .ex-13-button:hover .ex-13-bottom-white {
-    transition: 1s;
-    animation: translate-and-rotate-second 1s linear infinite;
+    animation: translate-and-rotate-second 1s ease;
 }
 
 @keyframes translate-and-rotate {
